@@ -5,7 +5,7 @@ import {showLoader, removeLoader, clearGallery, createGallery} from './js/render
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 
-
+removeLoader();
 
 const btnClass = document.querySelector('.submit-btn');
 const inputClass = document.querySelector('input[name = "search-text"]');
