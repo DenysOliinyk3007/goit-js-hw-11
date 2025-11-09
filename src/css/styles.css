@@ -5,14 +5,151 @@
   |============================
 */
 /* Common styles */
-@import url('./reset.css');
+/* @import url('./reset.css');
 @import url('./base.css');
 @import url('./container.css');
 @import url('./animations.css');
 
 /* Sections style */
-@import url('./header.css');
+/* @import url('./header.css');
 @import url('./vite-promo.css');
 @import url('./badges.css');
 @import url('./back-link.css');
-@import url('./footer.css');
+@import url('./footer.css');  */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+p, li, ul{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+ul {
+  list-style-type: none;
+}
+
+
+
+.gallery{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+
+.gallery-image{
+  display: block;
+}
+
+.gallery-item{
+  position: relative;
+  border: 1px solid rgba(128, 128, 128, 1);
+}
+
+.card {
+  
+  position: absolute;
+  bottom: 0; 
+  left: 0;
+  right: 0;
+}
+
+.card ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.card ul li{
+  padding-top: 4px;
+  padding-bottom: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.title{
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.subtitle{
+  font-size: 12px;
+}
+
+
+.form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.form-input{
+  width: 272px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(128, 128, 128, 1);
+  padding-left: 16px;
+  margin-right: 8px;
+}
+
+.form-input::placeholder{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+.submit-btn{
+  background-color: rgba(78, 117, 255, 1);
+  border: none;
+  cursor: pointer;
+  color: white;
+  width: 91px;
+  height: 40px;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 4%;
+}
+
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #4e75ff;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  margin: 40px auto;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hidden{
+  display: none; 
+}
